@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;}
+    body{
+        margin: 0;
+    }
+.container{
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+   }
+.navivation{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; /* Убираем маркеры */
+    padding: 0;
+    align-items: center;
+}
+.tittle{
+    background-image: url(img/foliac-logo.png);
+    width: 173px;
+    height: 99px;
+    margin: 0;
+}
+a{
+        text-decoration: none; 
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Lato', sans-serif;
+        color: white;
+
+}
+.ba-section{
+    display: block;
+    text-align: center;
+    background-position: center;
+    background-size: cover;              
+    background-repeat: no-repeat;
+    padding: 0 0 50px 0;
+}
+h2{
+    padding: 15rem 0 0 0;
+    font-size: 54px;
+    font-weight: 800;
+    font-family: 'Big John Font', sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+p {
+    margin: 4rem 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform:uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    color: white;
+    
+}
+.ba-header{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 0 0;
+    }
+        section{
+        background-image: url(img/computer.jpg);
+        margin: 0;
+        background-position: center;
+        background-size: cover;              
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        
+    }
+    p:last-child{
+        border-radius: 5px;
+        border:3px solid #48bf72;
+        color:#48bf72;
+        line-height: 44px;
+        vertical-align: middle;
+        display: inline-block;
+        padding: 0 10px 0 10px;
+    }
+   
+    .ba-tittle:nth-child(n+2)::before{
+    content: '';
+    height: 12px;
+    display: inline-block;
+    border:1px solid grey;
+    margin: 0 20px 0 0px;
+    transform:skewX(-20deg);}
+    .ba-tittle:hover::after
+    {
+        content: '';
+        height: 0px;
+        display: block;
+        border:1px solid aqua;
+        margin: 0;
+        padding: 0;
+        width: 72%;
+        transform:translateX(21px);
+        transition: 4s;
+        }  
+        
+        .ba-tittle:nth-child(-n+3){
+            margin: 0 30px 0 0;
+                }
+                .ba-tittle:nth-child(1):hover::after
+                {
+                    content: '';
+                    height: 0px;
+                    display: block;
+                    border:1px solid aqua;
+                    margin: 0;
+                    padding: 0;
+                    width: auto;
+                    transform:translateX(0px)
+                                     }
+
+    
